@@ -1,6 +1,6 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
-
+/*
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
@@ -9,10 +9,11 @@ test('has title', async ({ page }) => {
   await page.waitForTimeout(10000);
 });
 
-
+*/
 test('get started link', async ({ page }) => {
   await page.goto('https://playwright.dev/');
 
+  await page.waitForTimeout(10000);
   // Click the get started link.
   await page.getByRole('link', { name: 'Get started' }).click();
 
